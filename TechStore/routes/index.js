@@ -6,4 +6,8 @@ router.get('/', function(req, res, next) {
   res.render('login');
 });
 
+router.get('/signUp', function(req, res, next){
+  res.render('signUp');
+});
+
 module.exports = router;
