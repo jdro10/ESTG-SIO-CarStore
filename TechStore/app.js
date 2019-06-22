@@ -3,6 +3,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var mongoose = require('mongoose');
+
+mongoose.Promise = global.Promise;
+
+mongoose.connect('mongodb://localhost/techstore', {useNewUrlParser: true})
+  .then(() => console.log('Connection successful'))
+  .catch((err) => console.error(err));
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
