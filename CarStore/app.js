@@ -12,7 +12,7 @@ require('./controllers/authentication')(passport);
 
 mongoose.Promise = global.Promise;
 
-mongoose.connect('mongodb://localhost/techstore', {useNewUrlParser: true})
+mongoose.connect('mongodb://localhost/carstore', {useNewUrlParser: true})
   .then(() => console.log('Connection successful'))
   .catch((err) => console.error(err));
 
@@ -26,6 +26,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.use(express.static(__dirname + '/public'));
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));

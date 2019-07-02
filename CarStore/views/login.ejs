@@ -1,32 +1,96 @@
 <!DOCTYPE html>
+<!-- 
+Template Name: Mintos - Responsive Bootstrap 4 Admin Dashboard Template
+Author: Hencework
+Contact: support@hencework.com
+
+License: You must have a valid license purchased only from templatemonster to legally use the template for your project.
+-->
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="/stylesheets/loginStyle.css">
-    <title>Login</title>
-</head>
-
-<body>
-    <div class="loginForm">
-        <form action="/authentication/login" method="POST">
-            <img src="https://png.pngtree.com/svg/20170502/6b7e95cf9c.svg" style="width:100px;height:90px;">
-            <div class="form-group">
-                <input type="text" class="form-control" id="usernameInput" name="username" aria-describedby="emailHelp"
-                    placeholder="Username">
-            </div>
-            <div class="form-group">
-                <input type="password" class="form-control" id="passwordInput" name="password" placeholder="Password">
-            </div>
-            <button type="submit" class="btn btn-secondary btn-lg btn-block">Sign in</button>
-        </form>
-    </div>
-    <footer>
-        <p>2019-2019 TechStore - Sistemas de Informação Organizacionais</p>
-    </footer>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title>Mintos I Login</title>
+		<meta name="description" content="A responsive bootstrap 4 admin dashboard template by hencework" />
+		
+		<!-- Favicon -->
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="icon" href="favicon.ico" type="image/x-icon">
+		
+		<!-- Toggles CSS -->
+		<link href="vendors/jquery-toggles/css/toggles.css" rel="stylesheet" type="text/css">
+		<link href="vendors/jquery-toggles/css/themes/toggles-light.css" rel="stylesheet" type="text/css">
+		
+		<!-- Custom CSS -->
+		<link href="dist/css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+		<!-- Preloader -->
+		<div class="preloader-it">
+			<div class="loader-pendulums"></div>
+		</div>
+		<!-- /Preloader -->
+		
+		<!-- HK Wrapper -->
+		<div class="hk-wrapper">
+			
+			<!-- Main Content -->
+			<div class="hk-pg-wrapper hk-auth-wrapper">
+				<header class="d-flex justify-content-end align-items-center">
+				</header>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xl-12 pa-0">
+							<div class="auth-form-wrap pt-xl-0 pt-70">
+								<div class="auth-form w-xl-30 w-lg-55 w-sm-75 w-100">
+									<form action="/authentication/login" method="POST">
+										<h1 class="display-4 text-center mb-10">Welcome Back :)</h1>
+										<p class="text-center mb-30">Sign in to your account</p> 
+										<div class="form-group">
+											<input class="form-control" placeholder="Username" type="text">
+										</div>
+										<div class="form-group">
+											<div class="input-group">
+												<input class="form-control" placeholder="Password" type="password">
+												<div class="input-group-append">
+													<span class="input-group-text"><span class="feather-icon"><i data-feather="eye-off"></i></span></span>
+												</div>
+											</div>
+										</div>
+										<button class="btn btn-primary btn-block" type="submit">Login</button>
+										<div class="option-sep">or</div>
+										<p class="text-center">Do have an account yet? <a href="#">Sign Up</a></p>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /Main Content -->
+		
+		</div>
+		<!-- /HK Wrapper -->
+		
+		<!-- JavaScript -->
+		
+		<!-- jQuery -->
+		<script src="vendors/jquery/dist/jquery.min.js"></script>
+		
+		<!-- Bootstrap Core JavaScript -->
+		<script src="vendors/popper.js/dist/umd/popper.min.js"></script>
+		<script src="vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+		
+		<!-- Slimscroll JavaScript -->
+		<script src="dist/js/jquery.slimscroll.js"></script>
+	
+		<!-- Fancy Dropdown JS -->
+		<script src="dist/js/dropdown-bootstrap-extended.js"></script>
+		
+		<!-- FeatherIcons JavaScript -->
+		<script src="dist/js/feather.min.js"></script>
+		
+		<!-- Init JavaScript -->
+		<script src="dist/js/init.js"></script>
+	</body>
 </html>
